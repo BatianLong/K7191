@@ -15,7 +15,7 @@ public class UserMgr
     UserContext Context;
     public UserMgr()
     {
-        dbConnection= new SQLiteConnection(strcon);
+        dbConnection = new SQLiteConnection(strcon);
         Context = new UserContext(dbConnection);
     }
     public void CreateUser(UserModel user)
@@ -26,6 +26,28 @@ public class UserMgr
         user.CreateUser = usercode;
         DBHelper<UserModel> dbhelper = new DBHelper<UserModel>(Context);
         dbhelper.Add(user);
+    }
+    /// <summary>
+    /// 用户是否存在
+    /// 密码是否错误
+    /// </summary>
+    /// <param name="Account"></param>
+    /// <returns></returns>
+    public UserModel OnCheckUserAccount(UserModel user)
+    {
+        //UserModel User = Context.User.Where(p => (p.Account == user.Account || p.Phone == user.Account) && p.Password == user.Password).FirstOrDefault();
+        UserModel User = Context.User.Where(p => (p.Account == user.Account || p.Phone == user.Account)).FirstOrDefault();
+        return User;
+    }
+    /// <summary>
+    /// 电话是否已存在
+    /// </summary>
+    /// <param name="Phone"></param>
+    /// <returns></returns>
+    public bool OnCheckUserPhone(string Phone)
+    {
+        UserModel User = Context.User.Where(p => p.Phone == Phone && p.IsValid).FirstOrDefault();
+        return User == null;
     }
     public string SetUserCode()
     {

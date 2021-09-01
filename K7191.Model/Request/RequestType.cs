@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 public enum RequestCode
 {
-    C0001//创建用户
+    R0001,//创建用户
+    R0002,//登录
+    R0003,//创建对话
 }
 public enum RequestType
 {
