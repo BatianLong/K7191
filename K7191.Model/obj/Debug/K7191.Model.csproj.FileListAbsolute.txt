@@ -1,0 +1,6 @@
+G:\Code\K7191.Model\bin\Debug\K7191.Model.dll
+G:\Code\K7191.Model\bin\Debug\K7191.Model.pdb
+G:\Code\K7191.Model\obj\Debug\K7191.Model.csproj.CoreCompileInputs.cache
+G:\Code\K7191.Model\obj\Debug\K7191.Model.dll
+G:\Code\K7191.Model\obj\Debug\K7191.Model.pdb
+G:\Code\K7191.Model\obj\Debug\K7191.Model.csproj.AssemblyReference.cache
