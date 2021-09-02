@@ -8,6 +8,7 @@ public class RequestData//<T>
 {
     public RequestCode RequestCode { get; set; }
     public RequestType RequestType { get; set; }
+    public string Message { get; set; }
     public string Json { get; set; }
     //public T Model { get; set; }
     //public List<T> Models { get; set; }

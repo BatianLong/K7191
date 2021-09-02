@@ -9,22 +9,37 @@ namespace WindowsFormsApp1
 {
     public class MessageCenter
     {
-        public void OnDisposeCode(string msg)
+        public void OnDisposeCode(string msg, string ip)
         {
-            UserMgr mgr = new UserMgr();
-            RequestData data = Newtonsoft.Json.JsonConvert.DeserializeObject<RequestData>(msg);
-            if (data == null)
+            string UserCode = "";
+            try
             {
-                return;
+                RequestData data = Newtonsoft.Json.JsonConvert.DeserializeObject<RequestData>(msg);
+                if (data == null)
+                {
+                    return;
+                }
+                switch (data.RequestCode)
+                {
+                    case RequestCode.R0001:
+                        UserController controller = new UserController();
+                        controller.Register(data.Json);
+                        break;
+                    default:
+                        break;
+                }
+
             }
-            switch (data.RequestCode)
+            catch (Exception ex)
             {
-                case RequestCode.R0001:
-                    UserModel model= Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(data.Json);
-                    mgr.CreateUser(new UserModel());
-                    break;
-                default:
-                    break;
+                LogMgr mgr = new LogMgr();
+                LogInfo logInfo = new LogInfo();
+                logInfo.CreateUser = UserCode == "" ? ip : UserCode;
+                logInfo.Level = 1;
+                logInfo.LogType = LogType.RequestError.ToString();
+                logInfo.Message = ex.Message;
+                logInfo.Info = ex.ToString();
+                mgr.AddLog(logInfo);
             }
         }
     }

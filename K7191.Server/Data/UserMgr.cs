@@ -29,6 +29,7 @@ public class UserMgr
         dbhelper.Add(user);
     }
     /// <summary>
+    /// 登录
     /// 用户是否存在
     /// 密码是否错误
     /// </summary>

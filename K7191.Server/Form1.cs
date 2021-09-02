@@ -80,7 +80,7 @@ namespace K7191.Server
                         str = Encoding.UTF8.GetString(buffer, 0, count);
                         richTextBox1.Invoke(new Action(() => { OnAppendText("收到" + ip + "数据  " + str); }));
                         MessageCenter message = new MessageCenter();
-                        message.OnDisposeCode(str);
+                        message.OnDisposeCode(str, ip);
                         SendMessageToAll(ip+":"+ str);
 
                     }

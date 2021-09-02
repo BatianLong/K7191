@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{94527A7B-5F75-490C-3335-7AC324CD8062}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -64,6 +65,8 @@
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Features\DemoObjectAnimation.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Features\SceneManager_helper.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMNetwork\Scripts\FMClient.cs" />
+    <Compile Include="Assets\Scripts\Enum\PokerGroupType.cs" />
+    <Compile Include="Assets\Scripts\Rules.cs" />
     <Compile Include="Assets\Scripts\UnityAdsHelper.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Mapper\AudioDecoder.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMNetwork\Scripts\FMNetworkManager.cs" />
