@@ -64,6 +64,13 @@
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\FMBuildPostProcessor.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Scripts\Editor\FMSocketIOManager_Editor.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\AudioEncoder_Editor.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\QuickOperationSetting.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\ExtendedColorPicker.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\InitMUIP.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\ContextMenu.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\UIManagerEditor.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\CreateComponent.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\BuildSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -309,20 +316,20 @@
     <Reference Include="websocket-sharp">
       <HintPath>Assets\FM_ExhibitionToolPack\FMWebSocket\Plugins\WebsocketSharp\websocket-sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="FMSharpZip">
       <HintPath>Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMZip\FMSharpZip.dll</HintPath>
     </Reference>
+    <Reference Include="FMTurbojpegWrapper">
+      <HintPath>Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\FMTurboJpegWrapper\FMTurbojpegWrapper.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="FMTurbojpegWrapper">
-      <HintPath>Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\FMTurboJpegWrapper\FMTurbojpegWrapper.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -708,6 +715,12 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -717,17 +730,11 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

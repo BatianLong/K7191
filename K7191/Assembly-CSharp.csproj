@@ -64,6 +64,7 @@
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Features\DemoObjectAnimation.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Features\SceneManager_helper.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMNetwork\Scripts\FMClient.cs" />
+    <Compile Include="Assets\Scripts\UnityAdsHelper.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Mapper\AudioDecoder.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMNetwork\Scripts\FMNetworkManager.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Scripts\SocketIO\FM_Packet\SocketPacketType.cs" />
@@ -109,25 +110,166 @@
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Networking\NetworkAction\NetworkActions_Debug.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Scripts\SocketIO\FM_IO\Encoder.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Features\Interactive\PointerEvents.cs" />
-    <Compile Include="Assets\Scripts\UnityAdsHelper.cs" />
+    <Compile Include="Assets\AdManager.cs" />
+    <Compile Include="Assets\Scripts\UIPanels\LoginPanel.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerModalWindow.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Animated Icon\AnimatedIconHandler.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Tooltip\TooltipContent.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Notification\NotificationManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerProgressBar.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerSliderEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\RangeMinSlider.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Switch\SwitchManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerTooltip.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasicWithIconEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\RangeSlider.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerIconEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\RadialSliderEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerWithIcon.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\RadialSlider.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Rendering\UIGradientEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Window\WindowDragger.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerHSelector.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Demo\DemoTopButton.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Notification\NotificationManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasicWithIcon.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Horizontal Selector\HorizontalSelectorEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Tooltip\TooltipManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Modal Window\ModalWindowTabs.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\RangeMaxSlider.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerProgressBarLoopEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerButtonEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Fixes\LayoutGroupPositionFix.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Progress Bar\ProgressBarEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Progress Bar\ProgressBar.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerSwitch.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerWithIconEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Modal Window\ModalWindowManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerInputField.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Modal Window\ModalWindowManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Tooltip\TooltipManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Demo\LaunchURL.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\SliderManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Window\WindowManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerScrollbar.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Dropdown\DropdownMultiSelectEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Dropdown\CustomDropdown.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Switch\SwitchManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Notification\NotificationStacking.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Rendering\UIGradient.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Window\WindowManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasicIconEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Toggle\ToggleAnim.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerNotification.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Horizontal Selector\HorizontalSelector.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasicIcon.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerProgressBarLoop.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Demo\DemoListShadow.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Input Field\CustomInputField.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerSlider.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Fixes\UIElementInFront.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasic.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerIcon.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Progress Bar\PBFilled.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Slider\SliderManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerToggle.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerButton.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerDropdown.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Dropdown\CustomDropdownEditor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\UI Manager\UIManagerAnimatedIcon.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManager.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Dropdown\DropdownMultiSelect.cs" />
+    <Compile Include="Assets\Modern UI Pack\Scripts\Button\ButtonManagerBasicEditor.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\EditorExtensions\Bind.cs" />
+    <Compile Include="Assets\EditorExtensions\Extensions\Singleton.cs" />
+    <Compile Include="Assets\EditorExtensions\PathDefine.cs" />
+    <Compile Include="Assets\EditorExtensions\BindInfo.cs" />
+    <Compile Include="Assets\EditorExtensions\Extensions\MainKeyExtension.cs" />
+    <Compile Include="Assets\Scripts\UtilFuncs.cs" />
+    <Compile Include="Assets\Scripts\Consts.cs" />
+    <Compile Include="Assets\Scripts\UIPanels\LoginPanel.Designer.cs" />
+    <Compile Include="Assets\Scripts\Game.cs" />
+    <Compile Include="Assets\Scripts\UIPanels\LoadPanel.Designer.cs" />
+    <Compile Include="Assets\Scripts\UIPanels\LoadPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\FMTurboJpegWrapper\FMTurbojpegWrapper.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\UWP\x86-uwp\turbojpeg.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Shaders\multiTiles4x4.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Shaders\CircleShader.shader" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\LICENSE.txt" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\Mac\ReadMe_Mac.txt" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\UWP\arm-uwp\turbojpeg.dll" />
+    <None Include="Assets\Modern UI Pack\Read Me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Plugins\WebsocketSharp\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\Windows\x64\turbojpeg.dll" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\UWP\arm64-uwp\turbojpeg.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMZip\FMSharpZip.dll" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Shaders\multiTiles2x2.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Plugins\WebsocketSharp\websocket-sharp.dll" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\iOS\FMTurbojpegWrapper.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\Windows\x86\turbojpeg.dll" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\FM_ExhibitionToolPack\FMCore\Shaders\multiTiles4x1.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -349,11 +491,11 @@
     <Reference Include="FMSharpZip">
       <HintPath>Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMZip\FMSharpZip.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="FMTurbojpegWrapper">
       <HintPath>Assets\FM_ExhibitionToolPack\FMCore\Plugins\FMTurboJpeg\FMTurboJpegWrapper\FMTurbojpegWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -724,6 +866,12 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -733,17 +881,11 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

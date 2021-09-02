@@ -12,8 +12,8 @@ using UnityEngine.Advertisements;
 
 public class UnityAdsHelper : MonoBehaviour
 {
-	public string iosGameID = "4289136";
-	public string androidGameID = "4289137";
+	public string iosGameID = "4289199";
+	public string androidGameID = "4289198";
 
 	public bool enableTestMode = true;
 	public bool showInfoLogs;

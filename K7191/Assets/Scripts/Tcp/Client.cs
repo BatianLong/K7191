@@ -8,29 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class Client : MonoBehaviour
 {
-    //添加两个按钮用于发送数据和关闭连接
-    public Button sen;
-    public Button col;
-    public Button con;
-    //输入文本
-    public InputField inputText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        MessageText = GameObject.Find("MessageText").GetComponent<Text>();
-        sen.onClick.AddListener(send_smg);//发送
-        col.onClick.AddListener(close_btnClick);//关闭
-        con.onClick.AddListener(ConnectServer);//发送
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void send_smg()
     {
-        Send(inputText.text);
+        //Send(inputText.text);
     }
     public void close_btnClick()
     {
@@ -122,8 +103,7 @@ public class Client : MonoBehaviour
     public static Text MessageText;
     static void OnSendMessage(string msg)
     {
-        MessageText.text = msg;
-        Debug.Log(msg); 
-        MessagePanel.Instance.Log.Append(msg + "\n");
+        Debug.Log(msg);
+        EventCenter.Broadcast<string>(EventType.ShowText, msg);
     }
 }

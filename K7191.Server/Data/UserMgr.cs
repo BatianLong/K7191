@@ -13,6 +13,7 @@ public class UserMgr
     string strcon = ConfigurationManager.ConnectionStrings["sqlite"].ConnectionString.ToString();//"data source=C:\\Users\\Administrator\\Desktop.db";
     DbConnection dbConnection;
     UserContext Context;
+    private static readonly string obj = "lock";
     public UserMgr()
     {
         dbConnection = new SQLiteConnection(strcon);
@@ -51,14 +52,18 @@ public class UserMgr
     }
     public string SetUserCode()
     {
-        UserModel User = Context.User.OrderByDescending(p => p.ID).FirstOrDefault();
-        int lastid = 0;
-        if (User != null)
+        lock (obj)
         {
-            lastid = User.ID;
+            int lastid = 0;
+            UserModel User = Context.User.OrderByDescending(p => p.ID).FirstOrDefault();
+            if (User != null)
+            {
+                lastid = User.ID;
+            }
+            string Code = "U" + DateTime.Now.ToString("yyMMddHHmmss") + (lastid + 1).ToString("0000");
+            return Code;
         }
-        string Code = "U" + DateTime.Now.ToString("yyMMddHHmmss") + (lastid + 1).ToString("0000");
-        return Code;
+
     }
     public string Number(int Length, bool Sleep)
     {

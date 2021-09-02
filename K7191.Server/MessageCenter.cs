@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             }
             switch (data.RequestCode)
             {
-                case RequestCode.C0001:
+                case RequestCode.R0001:
                     UserModel model= Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(data.Json);
                     mgr.CreateUser(new UserModel());
                     break;
