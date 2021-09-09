@@ -57,20 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\GameViewDecoder_Editor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\ExtendedColorPicker.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\GameViewEncoder_Editor.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\AudioDecoder_Editor.cs" />
+    <Compile Include="Assets\Modern UI Pack\Editor\ContextMenu.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\QuickOperationSetting.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMNetwork\Scripts\Editor\FMNetworkManager_Editor.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\CreateComponent.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\MicEncoder_Editor.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\FMBuildPostProcessor.cs" />
+    <Compile Include="Assets\EditorExtensions\Editor\BuildSetting.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMWebSocket\Scripts\Editor\FMSocketIOManager_Editor.cs" />
     <Compile Include="Assets\FM_ExhibitionToolPack\FMCore\Scripts\Editor\AudioEncoder_Editor.cs" />
-    <Compile Include="Assets\EditorExtensions\Editor\QuickOperationSetting.cs" />
-    <Compile Include="Assets\Modern UI Pack\Editor\ExtendedColorPicker.cs" />
     <Compile Include="Assets\Modern UI Pack\Editor\InitMUIP.cs" />
-    <Compile Include="Assets\Modern UI Pack\Editor\ContextMenu.cs" />
     <Compile Include="Assets\Modern UI Pack\Editor\UIManagerEditor.cs" />
-    <Compile Include="Assets\EditorExtensions\Editor\CreateComponent.cs" />
-    <Compile Include="Assets\EditorExtensions\Editor\BuildSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

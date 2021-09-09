@@ -1,0 +1,7 @@
+<transforms>
+  <rotation id="0" name="momo">
+    <x>0</x>
+    <y>1</y>
+    <z id="1">2</z>
+  </rotation>
+</transforms>

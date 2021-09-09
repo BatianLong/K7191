@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 public class UserModel:BaseEntity
 {
-    public int ID { get; set; }
     public string UserCode { get; set; }
     public string Account { get; set; }
     public string RealName { get; set; }

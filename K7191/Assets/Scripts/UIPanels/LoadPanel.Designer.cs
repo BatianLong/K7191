@@ -15,6 +15,7 @@ using UnityEngine.UI;
 using UnityEngine;
     public partial class LoadPanel
     {
-		[SerializeField] private Transform BgImg;
+		[SerializeField] private Image BgImg;
 		[SerializeField] private Text Messagetxt;
+		[SerializeField] private Button EnterButton;
 	}

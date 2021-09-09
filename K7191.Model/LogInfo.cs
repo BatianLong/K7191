@@ -17,6 +17,7 @@ public class LogInfo
     public int Level { get; set; }
     public string Message { get; set; }
     public string Info { get; set; }
+    public string IP { get; set; }
     /// <summary>
     /// 创建时间
     /// </summary>

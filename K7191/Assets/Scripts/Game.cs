@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class Game:MonoBehaviour
+public class Game:Singleton<Game>
 {
     private void Start()
     {

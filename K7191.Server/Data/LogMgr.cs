@@ -18,6 +18,6 @@ public class LogMgr
     {
         log.CreateTime = DateTime.Now;
         DBHelper<LogInfo> dbhelper = new DBHelper<LogInfo>(Context);
-        dbhelper.Add(user);
+        dbhelper.Add(log);
     }
 }

@@ -8,4 +8,5 @@ public class Consts
 {
     public static string NAMESPACE="Test";
     public static string DefaultScriptsPath= "Assets/Scripts/UIPanels";
+    public static string DefaultXmlsPath = "Assets/Xmls";
 }

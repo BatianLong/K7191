@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public class BaseEntity
 {
+    public int ID { get; set; }
     /// <summary>
     /// 创建时间
     /// </summary>

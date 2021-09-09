@@ -10,7 +10,7 @@ public class Client : MonoBehaviour
 {
 
     public void send_smg()
-    {
+    { 
         //Send(inputText.text);
     }
     public void close_btnClick()
@@ -26,7 +26,7 @@ public class Client : MonoBehaviour
     {
         try
         {
-            IPAddress pAddress = IPAddress.Parse("121.4.132.26");
+            IPAddress pAddress = IPAddress.Parse("127.0.0.1");//("121.4.132.26");
             IPEndPoint pEndPoint = new IPEndPoint(pAddress, 3333);
             socket_client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket_client.Connect(pEndPoint);

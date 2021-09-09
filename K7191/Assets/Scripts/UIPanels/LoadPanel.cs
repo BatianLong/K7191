@@ -24,5 +24,9 @@ public partial class LoadPanel : PathDefine
     {
         Messagetxt.text = msg;
     }
+    public void EnterMineSence()
+    {
+
+    }
 }
 
