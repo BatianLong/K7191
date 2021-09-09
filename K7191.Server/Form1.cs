@@ -218,7 +218,7 @@ namespace K7191.Server
         private void Form1_Load(object sender, EventArgs e)
         {
             IPAddress ip=Tools.GetInternalIP();
-            LocalhostInfo r =Tools.GetIP(ip.ToString());
+            //LocalhostInfo r =Tools.GetIP(ip.ToString());
             txt_port.Text = "3333";
             txt_ip.Text = "0.0.0.0";
         }
